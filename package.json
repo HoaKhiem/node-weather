@@ -1,0 +1,22 @@
+{
+  "name": "th1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "express": "^4.17.1",
+    "foreachasync": "^3.0.0",
+    "hbs": "^4.1.2",
+    "path": "^0.12.7",
+    "process": "^0.11.10",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
