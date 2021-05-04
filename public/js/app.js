@@ -18,7 +18,8 @@ form.addEventListener('submit',(e)=>{
     temp.innerHTML = ''
     e.preventDefault()
     const location = inputt.value
-    fetch('http://localhost:3002/weatherr?search='+encodeURIComponent(location)+'').then((respnse)=>{
+    //change the fecth url (remove localhost)
+    fetch('http:/weatherr?search='+encodeURIComponent(location)+'').then((respnse)=>{
 
         respnse.json().then((data)=>{
             if(data.error){

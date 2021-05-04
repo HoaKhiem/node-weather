@@ -8,6 +8,9 @@ const publicDirectory = path.join(__dirname, '../public')
 const partialDirectory = path.join(__dirname, './template/partials')
 //use express:
 const app = express()
+//get port by heroku provide:
+const port = process.env.PORT || 3002 // if heroku port is doesn't exist, the application willl use port 3002
+
 //define the view path:
 const viewDirectory = path.join(__dirname, './template/views')
 //set up handler bar engine view location:
@@ -91,6 +94,6 @@ app.get('*', (req, res)=>{
         mess: 'Error'
     })
 })
-app.listen(3002, ()=>{
-    console.log(chalk.bgGreen.white.bold("Server is starting on port 3002."))
+app.listen(port, ()=>{
+    console.log(chalk.bgGreen.white.bold("Server is starting on port " +port))
 })
